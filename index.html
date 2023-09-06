@@ -1,0 +1,232 @@
+---
+layout: default
+title: Home
+---
+<!-- ========== BIO ========== -->
+<div class="docs-section" id="bio">
+  <h4>Bio</h4>
+  <p>
+    Hi! I am currently a junior undergraduate at Xi'an Jiaotong University.<a href="https://github.com/lyh6560new/lyh6560new.github.io/blob/master/assets/CV_Liu.pdf">CV</a>
+  <p>
+    
+     I am mostly interested in natural language processing, social network analysis and knowledge graph representation learning. A few topics of recent interest are,
+    
+    <dl style="PADDING-LEFT: 30px">
+    <dt><b>Political bias</b></dt> <dd>Large language models have inherent bias. How can we mitigate the bias in the generated texts? </dd>
+    <dt><b>Mixture of Experts(MoE)</b></dt>
+    <dd>A "divide and conquer strategy" with various experts activated depending on the inputs. </dd>
+    </dl>
+
+  </p>
+
+
+</div>
+
+<!-- ========== News ========== -->
+<div class="docs-section" id="News">
+    <h4>News</h4>
+
+    <div class="grid-container">
+      <div class="grid-item"></div>
+      <div class="grid-item">
+        <img src="assets/PoliLean_teaser.jpg" width="300" alt="PoliLean Teaser" >
+      </div>
+      <div class="grid-item">
+        <p>
+          <b>From Pretraining Data to Language Models to Downstream Tasks: Tracking the Trails of Political Biases Leading to Unfair NLP Models</b>
+        </p>
+        <p>
+             <a href="https://bunsenfeng.github.io/">Shangbin Feng</a>, <a href="https://chan0park.github.io/">Chan Young Park</a>, <b>Yuhan Liu</b>, <a href="https://homes.cs.washington.edu/~yuliats/">Yulia Tsvetkov</a> 
+        </p>
+        <p>
+          ACL 2023 &nbsp
+        </p>
+        <p>
+          We propose to study the political bias propagation pipeline from pretraining data to language models to downstream tasks. We find that language models do have political biases, such biases are in part picked up from pretraining corpora, and they could result in fairness issues in LM-based solutions to downstream tasks.
+        </p>
+      <div class="grid-item"></div>
+    </div>
+  
+    <div class="grid-container">
+        <div class="grid-item"></div>
+        <div class="grid-item">
+          <img src="assets/BotMoE-teaser.png" width="400" height="auto" alt="BotMoE Teaser">
+        </div>
+        <div class="grid-item"></div>
+        <div class="grid-item">
+          <p>
+            <b>BotMoE: Twitter Bot Detection with Community-Aware Mixtures of Modal-Specific Experts</b>
+          </p>
+          <p>
+              <b>Yuhan Liu</b>, <a href="https://zhaoxuan.info/">Zhaoxuan Tan</a>, <a href="https://arthur-heng.github.io/">Heng Wang</a>, <a href="https://bunsenfeng.github.io/">Shangbin Feng</a>, <a href="https://www.semanticscholar.org/author/Q.-Zheng/50320297?sort=total-citations">Qinghua Zheng</a>, <a href="https://scholar.google.com/citations?user=C3ujEF0AAAAJ&hl=en&oi=ao">Minnan Luo</a>
+          </p>
+          <p>
+            SIGIR 2023 &nbsp
+          </p>
+          <p>
+            We propose community-aware mixture-of-experts to address two challenges in detecting advanced Twitter bots: manipulated features and diverse communities.
+          </p>
+        </div>
+        <div class="grid-item"></div>
+    </div>
+  
+  
+  </div>
+
+
+<!--
+  <h4>Recent Research Areas</h4>
+
+<div class="docs-section" id="projects">
+
+      {% assign selected_projects = site.data.projects.projects | where: "selected", "y" %}
+      {% for project in selected_projects %}
+        {% assign index_modulo = forloop.index0 | modulo:3 %}
+        {% if index_modulo == 0 %}
+          <div class="row">
+        {% endif %}
+
+          <div class="four columns">
+            <div class="project-container">
+
+                <div class="project-image-container">
+                  <a href="{{ project.url }}">
+                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
+                  </a>
+                </div>
+
+                <div class="project-caption">
+                  <center>
+                  <b>{{ project.title }}</b> <br/>
+                  </center>
+                  {{ project.subtitle }}
+                </div>
+
+            </div>
+          </div>
+
+        {% if index_modulo == 2 %}
+          </div>
+        {% endif %}
+      {% endfor %}
+
+</div>
+
+--!>
+
+
+<!-- ========== PUBLICATIONS ========== -->
+
+
+
+
+<div class="docs-section" id="publications">
+  <h4>Publications</h4>
+
+  <p>Most recent publications on <a href="https://scholar.google.com/citations?hl=en&user=or-2JE8AAAAJ" target="_blank">Google Scholar</a>.</p>
+
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#papers-sel">Selected and Recent Papers</div></li>
+    <li><div class="button" data-ref="#papers-all">All</div></li>    
+  </ul>
+
+  <div class="tab-content">
+
+    <div class="tab-pane active" id="papers-sel">
+      {% assign papers = site.data.publications.papers | where: "selected", "y" %}
+      {% for paper in papers %}
+        <div class="paper">
+          <p class="title"><b>{{ paper.title }}</b>
+            {% if paper.paper_pdf %}
+              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">PDF</a>
+            {% endif %}
+            {% if paper.slides %}
+              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+            {% endif %}
+            {% if paper.poster %}
+              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+            {% endif %}
+            {% if paper.video %}
+              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+            {% endif %}
+            {% if paper.code %}
+              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+            {% endif %}
+          </p>
+          <p>{{ paper.authors }}</p>
+          <p><i>{{ paper.venue }}</i></p>
+           <div class="paper-buttons">
+
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <!-- All PAPERS -->
+    <div class="tab-pane" id="papers-all">
+      {% assign papers = site.data.publications.papers %}
+      {% for paper in papers %}
+        <div class="paper">
+          <p class="title"><b>{{ paper.title }}</b>
+            {% if paper.paper_pdf %}
+              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">PDF</a>
+            {% endif %}
+            {% if paper.slides %}
+              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+            {% endif %}
+            {% if paper.poster %}
+              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+            {% endif %}
+            {% if paper.video %}
+              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+            {% endif %}
+            {% if paper.code %}
+              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+            {% endif %}
+          </p>
+          <p>{{ paper.authors }}</p>
+          <p><i>{{ paper.venue }}</i></p>
+           <div class="paper-buttons">
+
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    
+
+
+
+
+<!-- ========== RESUME ========== -->
+<div class="docs-section" id="resume">
+  <h4>Resume</h4>
+
+  <!-- The Timeline -->
+  <ul class="timeline">
+    {% for exp in site.data.experience.experiences %}
+    <li>
+      {% if exp.category == "research" or exp.category == "competition" %}
+      <div class="direction-l">
+      {% else %}
+      <div class="direction-r">
+      {% endif %}
+        <div class="flag-wrapper">
+          <span class="flag">{{ exp.place }}</span>
+          <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
+        </div>
+        <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.subtitle }}</div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=TWqstnYi4p0-EA3jZx9LJYCPrImivGOFqTOJOftdu5Q&cl=ffffff&w=a"></script>
+
+  <div class="docs-section" id="ack">
+  <h4>Acknowledgement</h4>
+  <p>
+    This website uses the website design and template by <a href="https://github.com/msaveski/www_personal">Martin Saveski</a>
+  </p>
+
+</div>

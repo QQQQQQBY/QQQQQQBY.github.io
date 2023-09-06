@@ -1,0 +1,20 @@
+papers:
+
+
+  - title: "Multi-modal Social Bot Detection: Learning Homophilic and Heterophilic Connections Adaptively"
+    authors: "Shilong Li, Boyu Qiao, Kun Li, Qianqian Lu, Meng Lin, Wei Zhou"
+    venue: "In Proceedings of MM, 2023"
+    paper_pdf: "/assets/publications/MM_BothH_2023.pdf"
+    bio: y
+    selected: y
+
+  - title: "Social Bot Detection Based on Window Strategy"
+    authors: "Boyu Qiao, Kun Li, Wei Zhou, Zhou Yan, Shilong Li, Songlin Hu"
+    venue: "In Proceedings of the ICEM"
+    paper_pdf: "/assets/publications/ICME_BotWS_2023.pdf"
+    bio: y
+    selected: y
+
+
+
+
