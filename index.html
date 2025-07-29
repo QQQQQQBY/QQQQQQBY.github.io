@@ -1,457 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Boyu Qiao | Home</title>
-  <meta name="description" content="Homepage of Boyu Qiao">
-  <meta name="author" content="Boyu Qiao">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href=./libs/external/skeleton/normalize.css>
-  <link rel="stylesheet" href=./libs/external/skeleton/skeleton.css>
-  <link rel="stylesheet" href=./libs/custom/my_css.css>
-
-  <!-- JQuery
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src=./libs/external/jquery-3.1.1.min.js></script>
-
-  <!-- Font-Awesome
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href=./libs/external/font-awesome-4.7.0/css/font-awesome.min.css>
-
-  <!-- Skeleton tabs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href=./libs/external/skeleton_tabs/skeleton-tabs.css>
-  <script src=./libs/external/skeleton_tabs/skeleton-tabs.js></script>
-
-  <!-- Timeline
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href=./libs/external/timeline.css>
-
-  <!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!--<link rel="stylesheet" href=/libs/external/github-prettify-theme.css>-->
-  <script src=./libs/custom/my_js.js></script>
-
-  <!-- Favicon
-       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- z
-  <link rel="icon" type="image/png" href=/libs/icon.png>
-  <link rel="shortcut icon" type="image/png" href=/libs/icon.png>
-  -->
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boyu Qiao's Personal Homepage</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for a clean, academic look */
+        body {
+            font-family: 'Bitter', serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Basic link styling */
+        a {
+            color: #2563eb; /* Blue-600 */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* Style for section titles */
+        .section-title {
+            border-left: 4px solid #2563eb; /* Blue-600 */
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        /* Style for publication/project entries */
+        .publication-entry {
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            background-color: #f9fafb; /* Gray-50 */
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+        }
+        .publication-entry h3 {
+            color: #1f2937; /* Gray-800 */
+            margin-bottom: 0.5rem;
+        }
+        .publication-entry p {
+            color: #4b5563; /* Gray-600 */
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+        .publication-entry ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            color: #4b5563; /* Gray-600 */
+        }
+        .publication-entry ul li {
+            margin-bottom: 0.25rem;
+        }
+        .publication-links a {
+            margin-right: 1rem;
+            font-weight: 500;
+        }
+        /* Responsive adjustments for sidebar */
+        @media (max-width: 767px) {
+            .sidebar {
+                width: 100%;
+                position: relative;
+                padding: 1rem;
+                border-right: none;
+                border-bottom: 1px solid #e5e7eb; /* Gray-200 */
+            }
+            .content-area {
+                margin-left: 0;
+                padding: 1.5rem;
+            }
+            .sidebar-nav ul {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .sidebar-nav li {
+                margin: 0.5rem;
+            }
+        }
+    </style>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800">
+    <div class="flex flex-col md:flex-row min-h-screen">
+        <!-- Sidebar / Navigation -->
+        <aside class="sidebar w-full md:w-64 bg-white p-6 md:p-8 border-b md:border-b-0 md:border-r border-gray-200 shadow-lg md:shadow-none flex-shrink-0">
+            <div class="mb-8 text-center">
+                <!-- Placeholder for personal photo -->
+                <!-- Please replace 'https://placehold.co/160x208/E0E0E0/FFFFFF?text=Your+Photo' with your actual photo URL -->
+                <!-- Increased size to w-40 h-52 for a larger rectangular display -->
+                <img src="Boyu.jpg" alt="Personal Photo" class="w-40 h-52 mx-auto mb-4 object-cover border-4 border-blue-200 shadow-md rounded-lg">
+                
+                <h1 class="text-3xl font-extrabold text-gray-900 mb-2">Boyu Qiao</h1>
+                <p class="text-sm text-gray-600">
+                    <a href="mailto:qiaoboyu@iie.ac.cn" class="hover:underline">qiaoboyu@iie.ac.cn</a> 
+                    <!-- <a href="mailto:qiaoboyu@iie.ac.cn" class="hover:underline">borisqiao@ust.hk</a>                      -->
+                </p>
+                <!-- Placeholder for Google Scholar link -->
+                <p class="text-sm text-gray-600 mt-1">
+                    <a href="https://scholar.google.com/citations?user=gcLM9bAAAAAJ&hl=zh-CN" class="hover:underline" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                </p>
+                <!-- Placeholder for CV link -->
+                <p class="text-sm text-gray-600 mt-1">
+                    <a href="English_CVBoyu.pdf" class="hover:underline" target="_blank" rel="noopener noreferrer">CV</a>
+                </p>
+            </div>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
+            <nav class="sidebar-nav">
+                <ul class="flex flex-col md:flex-col space-y-2 md:space-y-4">
+                    <li><a href="#home" class="block py-2 px-4 rounded-lg hover:bg-blue-50 hover:text-blue-700 font-medium text-gray-700 transition duration-200">Home</a></li>
+                    <li><a href="#education" class="block py-2 px-4 rounded-lg hover:bg-blue-50 hover:text-blue-700 font-medium text-gray-700 transition duration-200">Education</a></li>
+                    <li><a href="#research" class="block py-2 px-4 rounded-lg hover:bg-blue-50 hover:text-blue-700 font-medium text-gray-700 transition duration-200">Research & Publications</a></li>
+                    <li><a href="#competition" class="block py-2 px-4 rounded-lg hover:bg-blue-50 hover:text-blue-700 font-medium text-gray-700 transition duration-200">Competition Experience</a></li>
+                    <li><a href="#skills" class="block py-2 px-4 rounded-lg hover:bg-blue-50 hover:text-blue-700 font-medium text-gray-700 transition duration-200">Professional Skills</a></li>
+                    <li><a href="#reviewer" class="block py-2 px-4 rounded-lg hover:bg-blue-50 hover:text-blue-700 font-medium text-gray-700 transition duration-200">Reviewer</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-    
-    <section class="header">
-      <div class="row">
-        <div class="three columns">
-          <a href="/"><img class="u-max-full-width" src='./assets/profile-pics/boyu.jpg'></a>
-        </div>
-        <div class="nine columns main-description">
-            <h1>Boyu Qiao</h1>
-            <p>乔博宇</p>
-            <p>PhD, iie, Chinese Academy of Sciences</p>
-            <p>qiaoboyu [AT] iie.ac.cn</p>
-            <p>
-              <span onclick="window.open('https://twitter.com/boyu_qiao')" style="cursor: pointer">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </span>
+        <!-- Main Content Area -->
+        <main class="content-area flex-grow p-6 md:p-10 lg:p-12">
+            <!-- Home / About Me Section -->
+            <section id="home" class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6 section-title">Home / About Me</h2>
+                <p class="text-lg leading-relaxed text-gray-700 mb-6">
+                    Welcome to my personal academic homepage! I am Boyu Qiao, a Ph.D. candidate in Cyberspace Security at the <a href="https://www.iie.ac.cn/" class="text-blue-600 hover:underline">Institute of Information Engineering, Chinese Academy of Sciences</a>, under the supervision of Prof. <a href="https://people.ucas.ac.cn/~husonglin?language=en" class="text-blue-600 hover:underline">Songlin Hu</a>. My research primarily focuses on understanding and combating the spread of disinformation and malicious activities/accounts in social networks. I am particularly interested in Social Bot Detection, Rumor/Fake News/Misinformation Detection, Graph Representation Learning, and Multi-Agent Simulation.
+                </p>
 
-              <span onclick="window.open('https://www.linkedin.com/in/%E5%8D%9A%E5%AE%87-%E4%B9%94-42b79528b/')" style="cursor: pointer">
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-              </span>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Research Interests</h3>
+                <!-- MODIFIED: Changed list styling for Research Interests section to match Latest Updates -->
+                <ul class="list-none text-lg text-gray-700 mb-12 space-y-2">
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2 mt-1">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <circle cx="10" cy="10" r="4"/>
+                            </svg>
+                        </span>
+                        <span>Social Bot Detection</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2 mt-1">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <circle cx="10" cy="10" r="4"/>
+                            </svg>
+                        </span>
+                        <span>Rumor/Fake News Detection</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2 mt-1">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <circle cx="10" cy="10" r="4"/>
+                            </svg>
+                        </span>
+                        <span>Graph Representation Learning</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2 mt-1">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <circle cx="10" cy="10" r="4"/>
+                            </svg>
+                        </span>
+                        <span>Multi-Agent Simulation</span>
+                    </li>
+                </ul>
 
-              <span onclick="window.open('https://github.com/QQQQQQBY')" style="cursor: pointer">
-                <i class="fa fa-github" aria-hidden="true"></i>
-              </span>
-              
-              <span onclick="window.open('/assets/CV_boyu.pdf')" style="cursor: pointer">
-                <i class="fa fa-file"></i>
-              </span>
-              
-              <span onclick="window.open('https://github.com/QQQQQQBY')" style="cursor: pointer">
-                <i class="fa fa-hundred-points" aria-hidden="true"></i>
-              </span>
-            </p>
-        </div>
-      </div>
-    </section>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Latest Updates</h3>
+                <!-- MODIFIED: Changed list styling for Latest Updates section -->
+                <ul class="list-none text-lg text-gray-700 space-y-2">
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2 mt-1">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <circle cx="10" cy="10" r="4"/>
+                            </svg>
+                        </span>
+                        <span>Excited to announce that I will be an Academic Exchange student at <a href="https://hkust.edu.hk/" class="text-blue-600 hover:underline">Hong Kong University of Science and Technology</a> from July 2025 to July 2026, working with Prof. <a href="https://facultyprofiles.hkust.edu.hk/profiles.php?profile=celine-yunya-song-yunyasong" class="text-blue-600 hover:underline">Céline Yunya Song</a>.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2 mt-1">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <circle cx="10" cy="10" r="4"/>
+                            </svg>
+                        </span>
+                        <span>Our paper "Dynamic Simulation Framework for Disinformation Dissemination and Correction With Social Bots" has been submitted to EMNLP 2025 (CCF-B, Review Stage).</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2 mt-1">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <circle cx="10" cy="10" r="4"/>
+                            </svg>
+                        </span>
+                        <span>Our work "BotSim: LLM-Powered Malicious Social Botnet Simulation" has been accepted at AAAI 2025 (CCF-A).</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2 mt-1">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <circle cx="10" cy="10" r="4"/>
+                            </svg>
+                        </span>
+                        <span>Our paper "Identifying Bots on Social Media through Coordinated Group Perception" has been accepted at ICASSP 2025 (CCF-B).</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2 mt-1">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <circle cx="10" cy="10" r="4"/>
+                            </svg>
+                        </span>
+                        <span>Our paper "Dispelling the Fake: Social Bot Detection Based on Edge Confidence Evaluation" has been published in TNNLS 2024 (SCI Q1).</span>
+                    </li>
+                </ul>
+            </section>
 
-    <div class="navbar-spacer"></div>
-    <nav class="navbar">
-      <div class="container">
-        <ul class="navbar-list">
-          <li class="navbar-item"><a class="navbar-link" href=#bio>Bio</a></li>
-          <li class="navbar-item"><a class="navbar-link" href=#publications>Publications</a></li>
-          <!---
-          <li class="navbar-item"><a class="navbar-link" href=/index.html#people>People</a></li>
-          --->
-          <li class="navbar-item"><a class="navbar-link" href=#resume>Resume</a></li>
-        </ul>
-      </div>
-    </nav>
+            <!-- Education Section -->
+            <section id="education" class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-12 section-title">Education</h2>
+                <div class="mb-6 publication-entry">
+                    <h3 class="text-xl font-semibold text-gray-800">Institute of Information Engineering, Chinese Academy of Sciences</h3>
+                    <p class="text-gray-600">PhD in Cyberspace Security</p>
+                    <p class="text-gray-600">Advisor: Prof. Songlin Hu</p>
+                    <p class="text-gray-600">Duration: 2021.08 - Present</p>
+                    
+                </div>
 
-    <!-- ========== BIO ========== -->
-<div class="docs-section" id="bio">
-  <h4>Bio</h4>
-  <p>
-    My main research interests include LLM Agent Evaluation, Social Sciences, and Social Bot Detection. In addition to that, I also focus on research directions in natural language processing and graph representation learning.<a href="./assets/CV_boyu.pdf">CV</a>
-  <p>
-    
-     I am mostly interested in natural language processing, social network analysis and knowledge graph representation learning. A few topics of recent interest are,
-    
-    <dl style="PADDING-LEFT: 30px">
-    <dt><b>LLM Agent Evaluation</b></dt> <dd>Opportunities and risks of LLM-driven human-like agents in a social environment </dd>
-    <dt><b>Coordinated Detection</b></dt>
-    <dd>How to detect inauthentic coordination on social networks?  </dd>
-    </dl>
+                <div class="mb-6 publication-entry">
+                    <h3 class="text-xl font-semibold text-gray-800">Hong Kong University of Science and Technology </h3>
+                    <p class="text-gray-600">Academic Exchange</p>
+                    <p class="text-gray-600">Advisor: Prof. Céline Yunya Song</p>
+                    <p class="text-gray-600">Duration: 2025.07 - 2026.07</p>
+                    
+                </div>
 
-  </p>
+                <div class="mb-6 publication-entry">
+                    <h3 class="text-xl font-semibold text-gray-800">Hebei University of Technology (211)</h3>
+                    <p class="text-gray-600">Bachelor of Network Engineering</p>
+                    <p class="text-gray-600">GPA: 3.84/4.00 (Rank: 2/71). Graduation Project: News Event Matching</p>
+                    <p class="text-gray-600">Duration: 2017.08 - 2021.06</p>
+                </div>
+            </section>
 
+            <!-- Research / Publications Section -->
+            <section id="research" class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6 section-title">Research & Publications</h2>
 
-</div>
+                <!-- Publication 1 -->
+                <div class="publication-entry">
+                    <h3 class="text-xl font-semibold">1. Dynamic Simulation Framework for Disinformation Dissemination and Correction With Social Bots.</h3>
+                    <!-- <div class="publication-links text-sm mt-2">  -->
+                    <p class="text-gray-600"><strong>Link: </strong>  <a href="https://arxiv.org/abs/2507.16848" class="text-blue-600 hover:underline">PDF</a>   <a href="https://github.com/QQQQQQBY/BotInfluence" class="text-blue-600 hover:underline ml-3">Code</a></p>  
+                    <!-- </div> -->
+                    <p class="text-gray-600"><strong>Authors: </strong><strong  class="text-blue-600">Boyu Qiao</strong>, Kun Li, Wei Zhou, and Songlin Hu.</p>
+                    <p class="text-gray-600"><strong>Conference:</strong> EMNLP 2025 (CCF-B, Review Stage)</p>
+                    
+                    <p class="text-gray-700 mt-2"><strong>Objective:</strong> Simulating disinformation dynamics to assess the impact of malicious bots and the effectiveness of correction strategies from legitimate bots.</p>
+                    <p class="text-gray-700 mt-2 font-medium"><strong>Technical Framework:</strong></p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Constructing a social propagation network based on the Stochastic Block (SB) and the Barabási-Albert (BA) Model.</li>
+                        <li>Utilizing prompt engineering and statistical modeling methods to generate multi-dimensional attribute features for user agents, including identity labels, interest preferences, and behavioral patterns.</li>
+                        <li>Establishing a time-driven mechanism and tool-calling interfaces to schedule dynamic interaction simulations among malicious bot agents, legitimate bot agents, and regular human agents at various stages.</li>
+                        <li>Designing dynamic quantitative evaluation metrics to assess the influence of malicious and legitimate bots on regular users.</li>
+                    </ul>
+                </div>
 
+                <!-- Publication 2 -->
+                <div class="publication-entry">
+                    <h3 class="text-xl font-semibold">2. BotSim: LLM-Powered Malicious Social Botnet Simulation.</h3>
+                    <p class="text-gray-600"><strong>Link: </strong>  <a href="https://arxiv.org/pdf/2412.13420" class="text-blue-600 hover:underline">PDF</a>   <a href="https://github.com/QQQQQQBY/BotSim" class="text-blue-600 hover:underline ml-3">Code</a> <a href="https://drive.google.com/drive/folders/1AmSkUL2ZB5pFVEznmfaDCRUAPWfV14sQ?usp=drive_link" class="text-blue-600 hover:underline ml-3">Dataset</a> </p>
+                    <p class="text-gray-600"><strong>Authors: </strong><strong  class="text-blue-600">Boyu Qiao</strong>, Kun Li, Wei Zhou, Shilong Li, Qianqian Lu, and Songlin Hu.</p>
+                    <p class="text-gray-600"><strong>Conference:</strong> AAAI 2025 (CCF-A)</p>
+                    
+                    <p class="text-gray-700 mt-2"><strong>Objective:</strong> Construct a social network simulation based on LLM to model social bot strategies and develop an LLM-driven social bot dataset.</p>
+                    <p class="text-gray-700 mt-2 font-medium"><strong>Technical Framework:</strong></p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Build the social network simulation using the LangChain framework and Prompt engineering.</li>
+                        <li>Use the PRAW library to collect real account data from Reddit and build the raw ecological data for the simulation environment.</li>
+                        <li>Integrate simulation flow, bot role settings, and actions to drive Prompt-based bot agent interactions, creating a dataset with 1,907 humans and 1,000 bots.</li>
+                        <li>Evaluate dataset quality using four baseline methods: feature engineering, semantic encoding, homogeneous GNN, and heterogeneous GNN.</li>
+                    </ul>
+                </div>
 
+                <!-- Publication 3 -->
+                <div class="publication-entry">
+                    <h3 class="text-xl font-semibold">3. Identifying Bots on Social Media through Coordinated Group Perception.</h3>
+                    <p class="text-gray-600"><strong>Link: </strong>  <a href="https://qqqqqqby.github.io/assets/publications/icassp_25.pdf" class="text-blue-600 hover:underline">PDF</a>   <a href="https://github.com/QQQQQQBY/BotCGP" class="text-blue-600 hover:underline ml-3">Code</a></p>
+                    <p class="text-gray-600"><strong>Authors:</strong> <strong  class="text-blue-600">Boyu Qiao</strong>, Kun Li, Wei Zhou, Shilong Li, Qianqian Lu, and Songlin Hu.</p>
+                    <p class="text-gray-600"><strong>Conference:</strong> ICASSP 2025 (CCF-B)</p>
+                    <p class="text-gray-700 mt-2"><strong>Objective:</strong> Identify the inherent coordination behaviors of bot account groups using community detection techniques.</p>
+                    <p class="text-gray-700 mt-2 font-medium">Technical Framework:</p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Extract coordination features from posting content using Autoencoders and K-means.</li>
+                        <li>Uncover coordination features in social relationships with GCN and differentiable modularity.</li>
+                        <li>Aggregate user attributes and coordination group features based on RGCN.</li>
+                    </ul>
+                </div>
 
+                <!-- Publication 4 -->
+                <div class="publication-entry">
+                    <h3 class="text-xl font-semibold">4. Dispelling the Fake: Social Bot Detection Based on Edge Confidence Evaluation.</h3>
+                    <p class="text-gray-600"><strong>Link: </strong>  <a href="https://qqqqqqby.github.io/assets/publications/TNNLS2024.pdf" class="text-blue-600 hover:underline">PDF</a>   <a href="https://github.com/QQQQQQBY/Bece" class="text-blue-600 hover:underline ml-3">Code</a></p>
+                    <p class="text-gray-600"><strong>Authors:</strong> <strong  class="text-blue-600">Boyu Qiao</strong>, Wei Zhou, Kun Li, Shilong Li, and Songlin Hu.</p>
+                    <p class="text-gray-600"><strong>Journal:</strong> TNNLS 2024 (SCI Q1)</p>
+                    <p class="text-gray-700 mt-2"><strong>Objective:</strong> Identify disguised interaction edges of bots in social networks to mitigate their impact on the GNN homogeneity assumption.</p>
+                    <p class="text-gray-700 mt-2 font-medium"><strong>Technical Framework:</strong></p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Encode account metadata and text using MLP and RoBERTa, and fuse features with multi-head attention.</li>
+                        <li>Construct edge features based on L1-distance between user nodes, and utilize Parametric Gaussian to reconstruct edge representations in latent semantic space.</li>
+                        <li>Estimate edge confidence with the Sigmoid function, and remove low-confidence edges based on Bernoulli distribution to update the social graph.</li>
+                        <li>Apply six types of homogeneous and heterogeneous GNN methods on the updated graph for node classification.</li>
+                    </ul>
+                </div>
 
+                <!-- Publication 5 -->
+                <div class="publication-entry">
+                    <h3 class="text-xl font-semibold">5. Multi-modal Social Bot Detection: Learning Homophilic and Heterophilic Connections Adaptively.</h3>
+                    <p class="text-gray-600"><strong>Link: </strong>  <a href="https://qqqqqqby.github.io/assets/publications/MM_BothH_2023.pdf" class="text-blue-600 hover:underline">PDF</a> </p>
+                    <p class="text-gray-600"><strong>Authors:</strong> Shilong Li, <strong  class="text-blue-600">Boyu Qiao</strong>, Kun Li, Qianqian Lu, Meng Lin, and Wei Zhou.</p>
+                    <p class="text-gray-600"><strong>Conference:</strong> MM 2023 (CCF A)</p>
+                    <p class="text-gray-700 mt-2"><strong>Objective:</strong> Enhance edge relationships in the social network graph using graph augmentation strategies.</p>
+                    <p class="text-gray-700 mt-2 font-medium"><strong>Technical Framework:</strong></p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Graph Augmentation Strategy 1: Add potential edge relationships based on node representation similarity.</li>
+                        <li>Graph Augmentation Strategy 2: Design an edge classifier to add homophilic and heterophilic edges.</li>
+                        <li>Combine the original graph with Strategies 1 and 2 to build a more complete social graph.</li>
+                        <li>Apply heterogeneous GNN on the updated graph to aggregate neighbor features for node classification.</li>
+                    </ul>
+                </div>
 
-<div class="docs-section" id="publications">
-  <h4>Publications</h4>
+                <!-- Publication 6 -->
+                <div class="publication-entry">
+                    <h3 class="text-xl font-semibold">6. Social Bot Detection Based on Window Strategy.</h3>
+                    <p class="text-gray-600"><strong>Link: </strong>  <a href="https://qqqqqqby.github.io/assets/publications/ICME_BotWS_2023.pdf" class="text-blue-600 hover:underline">PDF</a>  </p>
+                    <p class="text-gray-600"><strong>Authors:</strong> <strong  class="text-blue-600">Boyu Qiao</strong>, Kun Li, Wei Zhou, Zhou Yan, and Songlin Hu.</p>
+                    <p class="text-gray-600"><strong>Conference:</strong> ICME 2023 (CCF B)</p>
+                    <p class="text-gray-700 mt-2"><strong>Objective:</strong> Identify differences in posting behavior motivations between social bots and humans using a sliding window strategy.</p>
+                    <p class="text-gray-700 mt-2 font-medium"><strong>Technical Framework:</strong></p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Build initial posting embeddings using Roberta, and update with Bi-LSTM to capture past and future sequence information.</li>
+                        <li>Use sliding windows to segment user posting sequences, and apply multi-head attention to assess representation changes across windows.</li>
+                        <li>Integrate user metadata and window-based representation changes as node embeddings in the social graph.</li>
+                        <li>Apply heterogeneous GNN to aggregate neighbor features for node classification.</li>
+                    </ul>
+                </div>
+            </section>
 
-  <p>Most recent publications on <a href="https://scholar.google.com/citations?hl=en&user=or-2JE8AAAAJ" target="_blank">Google Scholar</a>.</p>
+            <!-- Competition Experience Section -->
+            <section id="competition" class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6 section-title">Competition Experience</h2>
+                <div class="publication-entry">
+                    <h3 class="text-xl font-semibold">1. Champion of the 'Explainable Social Network Community Detection' Track at the Songshan Lake AI Algorithm Challenge.</h3>
+                    <p class="text-gray-600"><strong>Link: </strong>  <a href="https://drive.google.com/file/d/10i7kfR_PV6RNRBr5KSd5f81yBvt0E24u/view?usp=drive_link" class="text-blue-600 hover:underline">PPT</a>   <a href="https://github.com/QQQQQQBY/CommunityDetection" class="text-blue-600 hover:underline ml-3">Code</a></p>
+                    <p class="text-gray-600"><strong>Team Members:</strong> <strong  class="text-blue-600">Boyu Qiao</strong>, Shiling Li, Kun Li, Wei Zhou.</p>
+                    <p class="text-gray-600"><strong>Year:</strong> 2023.</p>
+                    <p class="text-gray-700 mt-2"><strong>Task Objective:</strong> Use modularity metric to partition users into different communities and explore the interpretability of the partitioning results.</p>
+                    <p class="text-gray-700 mt-2 font-medium"><strong>Technical Framework:</strong></p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Construct social graphs based on user forwarding relationships, initialize node embeddings in one-hot form, and update embeddings using GCN encoder.</li>
+                        <li>Apply K-means to group nodes into clusters.</li>
+                        <li>Design a differentiable modularity function to optimize the graph neural network as the loss function.</li>
+                        <li>Explore the interpretability of the community divisions by mapping them to user attribute features.</li>
+                    </ul>
+                </div>
+            </section>
 
-  <ul class="tab-nav">
-    <!-- <li><div class="button active" data-ref="#papers-sel">Selected and Recent Papers</div></li> -->
-    <li><div class="button" data-ref="#papers-all">All</div></li>    
-  </ul>
+            <!-- Professional Skills Section -->
+            <section id="skills" class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6 section-title">Professional Skills</h2>
+                <div class="text-lg text-gray-700 space-y-2">
+                    <p><span class="font-semibold">Language:</span> English (CET-6)</p>
+                    <p><span class="font-semibold">Expertise:</span> Deep Learning, Social Network Analysis, Graph Neural Networks, Natural Language Processing</p>
+                    <p><span class="font-semibold">Skills:</span> PyTorch, TensorFlow</p>
+                </div>
+            </section>
 
-  <div class="tab-content">
+            <!-- Reviewer Section -->
+            <section id="reviewer" class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6 section-title">Reviewer</h2>
+                <ul class="list-disc list-inside text-lg text-gray-700 space-y-1">
+                    <li>MM</li>
+                    <li>AAAI</li>
+                    <li>TKDE</li>
+                    <li>ICASSP</li>
+                </ul>
+            </section>
 
-    <div class="tab-pane active" id="papers-all">
-      <div class="paper">
-        <p class="title"><b>BotSim: LLM-Powered Malicious Social Botnet Simulation</b>
-          
-            <a class="button" href="/assets/publications/AAAI2025.pdf" target="_blank">PDF</a>
-        </p>
-        <p><u>Boyu Qiao</u>, Kun Li, Wei Zhou, Shilong Li, Qianqian Lu, and Songlin Hu</p>
-        <p><i>In Proceedings of AAAI, 2025</i></p>
-         <div class="paper-buttons">
-
-        </div>
-      </div>
-      
-        <div class="paper">
-          <p class="title"><b>Identifying Bots on Social Media through Coordinated Group Perception</b>
-            
-              <a class="button" href="/assets/publications/icassp_25.pdf" target="_blank">PDF</a>
-          </p>
-          <p><u>Boyu Qiao</u>, Kun Li, Wei Zhou, Shilong Li, Qianqian Lu, and Songlin Hu</p>
-          <p><i>In Proceedings of ICASPP, 2025</i></p>
-           <div class="paper-buttons">
-
-          </div>
-        </div>
-
-        <div class="paper">
-          <p class="title"><b>Dispelling the Fake: Social Bot Detection Based on Edge Confidence Evaluation</b>
-            
-              <a class="button" href="/assets/publications/TNNLS2024.pdf" target="_blank">PDF</a>
-          </p>
-          <p><u>Boyu Qiao</u>, Kun Li, Wei Zhou, Shilong Li, and Songlin Hu</p>
-          <p><i>In Journal of TNNLS, 2024</i></p>
-           <div class="paper-buttons">
-
-          </div>
-        </div>
-
-        <div class="paper">
-          <p class="title"><b>Multi-modal Social Bot Detection: Learning Homophilic and Heterophilic Connections Adaptively</b>
-            
-              <a class="button" href="/assets/publications/MM_BothH_2023.pdf" target="_blank">PDF</a>
-          </p>
-          <p>Shilong Li, <u>Boyu Qiao</u>, Kun Li, Qianqian Lu, Meng Lin, Wei Zhou</p>
-          <p><i>In Proceedings of MM, 2023</i></p>
-           <div class="paper-buttons">
-
-          </div>
-        </div>
-      
-        <div class="paper">
-          <p class="title"><b>Social Bot Detection Based on Window Strategy</b>
-            
-              <a class="button" href="/assets/publications/ICME_BotWS_2023.pdf" target="_blank">PDF</a>
-          </p>
-          <p>Boyu Qiao, Kun Li, Wei Zhou, Zhou Yan, Shilong Li, Songlin Hu</p>
-          <p><i>In Proceedings of the ICEM, 2023</i></p>
-           <div class="paper-buttons">
-
-          </div>
-        </div>
-      
+            <!-- Footer -->
+            <footer class="text-center text-gray-500 text-sm mt-12 pt-8 border-t border-gray-200">
+                <p>&copy; 2025 Boyu Qiao. All rights reserved.</p>
+            </footer>
+        </main>
     </div>
-
-    All PAPERS
-    <div class="tab-pane" id="papers-all">
-      
-      
-        
-      
-    </div>
-    
-
-
-
-
-<!-- ========== RESUME ========== -->
-<div class="docs-section" id="resume">
-  <h4>Resume</h4>
-
-  <!-- The Timeline -->
-  <ul class="timeline">
-    
-    <li>
-      
-      <div class="direction-r">
-      
-        <div class="flag-wrapper">
-          <span class="flag">Paper for AAAI</span>
-          <span class="time-wrapper"><span class="time">2025</span></span>
-        </div>
-        <div class="desc"><b>BotSim: LLM-Powered Malicious Social Botnet Simulation</b> <br/> </div>
-      </div>
-    </li>
-    
-    <li>
-      
-      <div class="direction-l">
-      
-        <div class="flag-wrapper">
-          <span class="flag">Paper for ICASSP</span>
-          <span class="time-wrapper"><span class="time">2025</span></span>
-        </div>
-        <div class="desc"><b>Identifying Bots on Social Media through Coordinated Group Perception</b> <br/> </div>
-      </div>
-    </li>
-
-    <li>
-      
-      <div class="direction-r">
-      
-        <div class="flag-wrapper">
-          <span class="flag">Paper for TNNLS</span>
-          <span class="time-wrapper"><span class="time">2024</span></span>
-        </div>
-        <div class="desc"><b>Dispelling the Fake: Social Bot Detection Based on Edge Confidence Evaluation</b> <br/> </div>
-      </div>
-    </li>
-
-    <li>
-      
-      <div class="direction-l">
-      
-        <div class="flag-wrapper">
-          <span class="flag"> The Artificial Intelligence Challenge</span>
-          <span class="time-wrapper"><span class="time">2023</span></span>
-        </div>
-        <div class="desc"><b>2023 Songshan Lake Artificial Intelligence Algorithm Challenge "Social network community Detection" track champion</b> <br/> </div>
-      </div>
-    </li>
-
-    <li>
-      
-      <div class="direction-r">
-      
-        <div class="flag-wrapper">
-          <span class="flag">Paper for MM</span>
-          <span class="time-wrapper"><span class="time">2023</span></span>
-        </div>
-        <div class="desc"><b>Multi-modal Social Bot Detection: Learning Homophilic and Heterophilic Connections Adaptivel</b> <br/> </div>
-      </div>
-    </li>
-    
-    <li>
-      
-      <div class="direction-l">
-      
-        <div class="flag-wrapper">
-          <span class="flag">Paper for ICEM</span>
-          <span class="time-wrapper"><span class="time">2023</span></span>
-        </div>
-        <div class="desc"><b>Social bot detection based on window strategy</b> <br/> </div>
-      </div>
-    </li>
-    
-    <li>
-      
-      <div class="direction-r">
-      
-        <div class="flag-wrapper">
-          <span class="flag">Institute of Information Engineering, University of Chinese Academy of Sciences</span>
-          <span class="time-wrapper"><span class="time">2021 - now</span></span>
-        </div>
-        <div class="desc"><b>PhD students</b> <br/> Research Institute</div>
-      </div>
-    </li>
-    
-    <li>
-      
-      <div class="direction-l">
-      
-        <div class="flag-wrapper">
-          <span class="flag">Excellent graduation thesis</span>
-          <span class="time-wrapper"><span class="time">2021</span></span>
-        </div>
-        <div class="desc"><b>Design and Implementation of Knowledge Graph-based Natural Language Processing Algorithms</b> <br/> </div>
-      </div>
-    </li>
-    
-    <li>
-      
-      <div class="direction-r">
-      
-        <div class="flag-wrapper">
-          <span class="flag">President of the Student Union</span>
-          <span class="time-wrapper"><span class="time">2020</span></span>
-        </div>
-        <div class="desc"><b>President of the Student Union, Deputy Secretary of the Youth League Committee</b> <br/> </div>
-      </div>
-    </li>
-    
-    <li>
-      
-      <div class="direction-l">
-      
-        <div class="flag-wrapper">
-          <span class="flag">Excellent research report</span>
-          <span class="time-wrapper"><span class="time">2019</span></span>
-        </div>
-        <div class="desc"><b>The Central Committee of the Communist Youth League's Top 100 Excellent Research Reports</b> <br/> </div>
-      </div>
-    </li>
-    
-    <li>
-      
-      <div class="direction-r">
-      
-        <div class="flag-wrapper">
-          <span class="flag">Tianjin City College Student Innovation and Entrepreneurship Scholarship</span>
-          <span class="time-wrapper"><span class="time">2020</span></span>
-        </div>
-        <div class="desc"><b>Innovation ability reward</b> <br/> Obtaining Awards from Multiple Innovation and Entrepreneurship Competitions</div>
-      </div>
-    </li>
-    
-    <li>
-      
-      <div class="direction-l">
-      
-        <div class="flag-wrapper">
-          <span class="flag">Advanced Individual in Social Practice of Tianjin</span>
-          <span class="time-wrapper"><span class="time">2019</span></span>
-        </div>
-        <div class="desc"><b>Social practice reward</b> <br/> </div>
-      </div>
-    </li>
-    
-    <li>
-      
-      <div class="direction-r">
-      
-        <div class="flag-wrapper">
-          <span class="flag">First-class scholarship </span>
-          <span class="time-wrapper"><span class="time">2018-2021</span></span>
-        </div>
-        <div class="desc"><b>For four consecutive years</b> <br/> Outstanding academic performance and comprehensive quality</div>
-      </div>
-    </li>
-    
-    <li>
-      
-      <div class="direction-l">
-      
-        <div class="flag-wrapper">
-          <span class="flag">Hebei University of Technology(211 in China)</span>
-          <span class="time-wrapper"><span class="time">2017.08 - 2021.06</span></span>
-        </div>
-        <div class="desc"><b>Major in Network Engineering</b> <br/> Comprehensive ranking: 2nd/71</div>
-      </div>
-    </li>
-    
-  </ul>
-</div>
-
-<!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=TWqstnYi4p0-EA3jZx9LJYCPrImivGOFqTOJOftdu5Q&cl=ffffff&w=a"></script> -->
-
-  <div class="docs-section" id="ack">
-  <h4>Acknowledgement</h4>
-  <p>
-    This website uses the website design and template by <a href="https://github.com/msaveski/www_personal">Martin Saveski</a>
-  </p>
-
-</div>
-
-
-    <div class="footer">
-      <div class="row">
-        <div class="four columns">
-          Boyu Qiao
-        </div>
-        <div class="four columns">
-          qiaoboyu [AT] iie.ac.cn
-        </div>
-        <div class="four columns">
-          <span onclick="window.open('https://twitter.com/boyu_qiao')" style="cursor: pointer">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-          </span>
-          <span onclick="window.open('https://www.linkedin.com/in/%E5%8D%9A%E5%AE%87-%E4%B9%94-42b79528b/')" style="cursor: pointer">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          </span>
-          <span onclick="window.open('https://github.com/QQQQQQBY')" style="cursor: pointer">
-            <i class="fa fa-github" aria-hidden="true"></i>
-          </span>
-          <span onclick="window.open('/assets/CV_boyu.pdf')" style="cursor: pointer">
-            <i class="fa-thin fa-file"></i>
-          </span>
-          <span onclick="window.open('https://github.com/QQQQQQBY')" style="cursor: pointer">
-            <i class="fa-solid fa-hundred-points"></i>
-          </span>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Google Analytics -->
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', '', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
