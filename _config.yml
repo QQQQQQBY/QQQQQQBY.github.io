@@ -1,8 +1,0 @@
-source:      .
-destination: 
-includes:    
-baseurl: 
-
-collections:
-  projects:
-    output: true
