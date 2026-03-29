@@ -243,12 +243,27 @@
             <section id="research" class="mb-12">
                 <h2 class="text-3xl font-bold text-gray-900 mb-6 section-title">Research & Publications</h2>
 
-                <!-- Publication 1 -->
-                <!-- <div class="publication-entry">
-                    <h3 class="text-xl font-semibold">1. Diagnosing Retrieval Bias Under Multiple In-Context Knowledge Updates in Large Language Models.</h3>
-                    <p class="text-gray-600"><strong>Link: </strong>  <a href="https://drive.google.com/file/d/1NJoJkcDWWRSjYIqVDhCMVlbOkuKSGURA/view?usp=drive_link" class="text-blue-600 hover:underline">PDF</a>   <a href="https://github.com/QQQQQQBY/RetrivalBiasDKI" class="text-blue-600 hover:underline ml-3">Code</a> </p>
+                  <!-- Publication 1 -->
+                <div class="publication-entry">
+                    <h3 class="text-xl font-semibold">1. MGDIL: Multi-Granularity Summarization and Domain-Invariant Learning for Cross-Domain Social Bot Detection.</h3>
+                    <p class="text-gray-600"><strong>Link: </strong>  <a href="" class="text-blue-600 hover:underline">PDF</a>   <a href="" class="text-blue-600 hover:underline ml-3">Code</a> </p>
+                    <p class="text-gray-600"><strong>Authors: </strong><strong  class="text-blue-600">Boyu Qiao</strong>, Yunman Chen, Kun Li, Wei Zhou, Songlin Hu, and Yunya Song.</p>
+                    <p class="text-gray-600"><strong>Conference:</strong>Under Review </p>
+                    <p class="text-gray-700 mt-2"><strong>Objective:</strong> By fine-tuning LLMs with an instruction-tuning dataset and integrating cross-domain invariant representation learning, we enhance the model’s cross-domain detection capability for social bots.</p>
+                    <p class="text-gray-700 mt-2 font-medium"><strong>Technical Framework:</strong></p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li><b>Instruction-tuning dataset and LoRA Fine-tune:</b> We build an instruction-tuning dataset based on 15 social bot datasets and use LoRA fine-tuning to enhance LLMs’ ability to learn more informative user representations for social bot detection.</li>
+                        <li><b>Domain Adversarial Training:</b> We introduce gradient reversal layer (GRL)-based domain adversarial training to adversarially reduce domain-specific information in the learned representations, align feature distributions across datasets, and improve the model’s cross-domain generalization ability.</li>
+                        <li><b>Contrastive Learning:</b> We apply cross-domain contrastive learning to pull together same-class users across domains and push apart different-class users, improving feature discrimination and generalization.</li>
+                    </ul>
+                </div> 
+
+                <!-- Publication 2 -->
+                <div class="publication-entry">
+                    <h3 class="text-xl font-semibold">2. Diagnosing Retrieval Bias Under Multiple In-Context Knowledge Updates in Large Language Models.</h3>
+                    <p class="text-gray-600"><strong>Link: </strong>  <a href="https://arxiv.org/abs/2603.12271" class="text-blue-600 hover:underline">PDF</a>   <a href="https://github.com/QQQQQQBY/RetrivalBiasDKI" class="text-blue-600 hover:underline ml-3">Code</a> </p>
                     <p class="text-gray-600"><strong>Authors: </strong><strong  class="text-blue-600">Boyu Qiao</strong>, Sean Guo, Xian Yang, Kun Li, Wei Zhou, Songlin Hu, and Yunya Song.</p>
-                    <p class="text-gray-600"><strong>Conference:</strong> ACL 2026 (CCF-A, Review Stage)</p>
+                    <p class="text-gray-600"><strong>Conference:</strong>Under Review </p>
                     <p class="text-gray-700 mt-2"><strong>Objective:</strong> Based on the AB–AC interference paradigm in cognitive psychology, we identify significant retrieval biases in LLMs under repeated cue update settings and propose several cognitively inspired intervention strategies to alleviate these biases.</p>
                     <p class="text-gray-700 mt-2 font-medium"><strong>Technical Framework:</strong></p>
                     <ul class="list-disc list-inside text-gray-700">
@@ -256,11 +271,11 @@
                         <li>Internal Signal Analysis: We examine attention patterns, hidden-state similarity, and confidence scores in open-source models to characterize their behavior under updates.</li>
                         <li>Cognitive Interventions: General mnemonic and memory-updating strategies are incorporated at the prompt level to alleviate retrieval bias.</li>
                     </ul>
-                </div> -->
+                </div> 
 
                 <!-- Publication 2 -->
                 <div class="publication-entry">
-                    <h3 class="text-xl font-semibold">1. Dynamic Simulation Framework for Disinformation Dissemination and Correction With Social Bots.</h3>
+                    <h3 class="text-xl font-semibold">3. Dynamic Simulation Framework for Disinformation Dissemination and Correction With Social Bots.</h3>
                     <!-- <div class="publication-links text-sm mt-2">  -->
                     <p class="text-gray-600"><strong>Link: </strong>  <a href="https://arxiv.org/abs/2507.16848" class="text-blue-600 hover:underline">PDF</a>   <a href="https://github.com/QQQQQQBY/BotInfluence" class="text-blue-600 hover:underline ml-3">Code</a> <a href="https://drive.google.com/drive/folders/1V9YE-V0Ibi9nXD20thSPWxJCD7dSSrjx?usp=drive_link" class="text-blue-600 hover:underline ml-3">Dataset</a> </p>
                     <!-- </div> -->
@@ -279,7 +294,7 @@
 
                 <!-- Publication 3 -->
                 <div class="publication-entry">
-                    <h3 class="text-xl font-semibold">2. BotSim: LLM-Powered Malicious Social Botnet Simulation.</h3>
+                    <h3 class="text-xl font-semibold">4. BotSim: LLM-Powered Malicious Social Botnet Simulation.</h3>
                     <p class="text-gray-600"><strong>Link: </strong>  <a href="https://arxiv.org/pdf/2412.13420" class="text-blue-600 hover:underline">PDF</a>   <a href="https://github.com/QQQQQQBY/BotSim" class="text-blue-600 hover:underline ml-3">Code</a> <a href="https://drive.google.com/drive/folders/1AmSkUL2ZB5pFVEznmfaDCRUAPWfV14sQ?usp=drive_link" class="text-blue-600 hover:underline ml-3">Dataset</a> </p>
                     <p class="text-gray-600"><strong>Authors: </strong><strong  class="text-blue-600">Boyu Qiao</strong>, Kun Li, Wei Zhou, Shilong Li, Qianqian Lu, and Songlin Hu.</p>
                     <p class="text-gray-600"><strong>Conference:</strong> AAAI 2025 (CCF-A)</p>
@@ -296,7 +311,7 @@
 
                 <!-- Publication 4 -->
                 <div class="publication-entry">
-                    <h3 class="text-xl font-semibold">3. Identifying Bots on Social Media through Coordinated Group Perception.</h3>
+                    <h3 class="text-xl font-semibold">5. Identifying Bots on Social Media through Coordinated Group Perception.</h3>
                     <p class="text-gray-600"><strong>Link: </strong>  <a href="https://qqqqqqby.github.io/assets/publications/icassp_25.pdf" class="text-blue-600 hover:underline">PDF</a>   <a href="https://github.com/QQQQQQBY/BotCGP" class="text-blue-600 hover:underline ml-3">Code</a></p>
                     <p class="text-gray-600"><strong>Authors:</strong> <strong  class="text-blue-600">Boyu Qiao</strong>, Kun Li, Wei Zhou, Shilong Li, Qianqian Lu, and Songlin Hu.</p>
                     <p class="text-gray-600"><strong>Conference:</strong> ICASSP 2025 (CCF-B)</p>
@@ -311,7 +326,7 @@
 
                 <!-- Publication 5 -->
                 <div class="publication-entry">
-                    <h3 class="text-xl font-semibold">4. Dispelling the Fake: Social Bot Detection Based on Edge Confidence Evaluation.</h3>
+                    <h3 class="text-xl font-semibold">6. Dispelling the Fake: Social Bot Detection Based on Edge Confidence Evaluation.</h3>
                     <p class="text-gray-600"><strong>Link: </strong>  <a href="https://qqqqqqby.github.io/assets/publications/TNNLS2024.pdf" class="text-blue-600 hover:underline">PDF</a>   <a href="https://github.com/QQQQQQBY/Bece" class="text-blue-600 hover:underline ml-3">Code</a></p>
                     <p class="text-gray-600"><strong>Authors:</strong> <strong  class="text-blue-600">Boyu Qiao</strong>, Wei Zhou, Kun Li, Shilong Li, and Songlin Hu.</p>
                     <p class="text-gray-600"><strong>Journal:</strong> TNNLS 2024 (SCI Q1)</p>
@@ -327,7 +342,7 @@
 
                 <!-- Publication 6 -->
                 <div class="publication-entry">
-                    <h3 class="text-xl font-semibold">5. Multi-modal Social Bot Detection: Learning Homophilic and Heterophilic Connections Adaptively.</h3>
+                    <h3 class="text-xl font-semibold">7. Multi-modal Social Bot Detection: Learning Homophilic and Heterophilic Connections Adaptively.</h3>
                     <p class="text-gray-600"><strong>Link: </strong>  <a href="https://qqqqqqby.github.io/assets/publications/MM_BothH_2023.pdf" class="text-blue-600 hover:underline">PDF</a> </p>
                     <p class="text-gray-600"><strong>Authors:</strong> Shilong Li, <strong  class="text-blue-600">Boyu Qiao</strong>, Kun Li, Qianqian Lu, Meng Lin, and Wei Zhou.</p>
                     <p class="text-gray-600"><strong>Conference:</strong> MM 2023 (CCF A)</p>
@@ -343,7 +358,7 @@
 
                 <!-- Publication 7 -->
                 <div class="publication-entry">
-                    <h3 class="text-xl font-semibold">6. Social Bot Detection Based on Window Strategy.</h3>
+                    <h3 class="text-xl font-semibold">8. Social Bot Detection Based on Window Strategy.</h3>
                     <p class="text-gray-600"><strong>Link: </strong>  <a href="https://qqqqqqby.github.io/assets/publications/ICME_BotWS_2023.pdf" class="text-blue-600 hover:underline">PDF</a>  </p>
                     <p class="text-gray-600"><strong>Authors:</strong> <strong  class="text-blue-600">Boyu Qiao</strong>, Kun Li, Wei Zhou, Zhou Yan, and Songlin Hu.</p>
                     <p class="text-gray-600"><strong>Conference:</strong> ICME 2023 (CCF B)</p>
